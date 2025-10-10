@@ -1,0 +1,46 @@
+#include<stdio.h>
+int main()
+{
+  int maths,physics,chemistry,IP,english;
+  float total,percentage;
+  
+  printf("ENTER THE MARKS OF PHYSICS:");
+  scanf("%d",&physics);
+  
+  printf("ENTER THE MARKS OF MATHS:");
+  scanf("%d",&maths);
+  
+  printf("ENTER THE MARKS OF IP:");
+  scanf("%d",&IP);
+  
+  printf("ENTER THE MARKS OF CHEMISTRY:");
+  scanf("%d",&chemistry);
+  
+  printf("ENTER THE MARKS OF ENGLISH :");
+  scanf("%d",&english);
+
+  total=physics+chemistry+maths+IP+english;
+  printf("TOTAL MARKS:%.2f\n",total);
+
+  percentage=total/5;
+  printf("PERCENTAGE:%.2f\n",percentage);
+
+  if(percentage>90 && percentage<=100)
+    printf("GRADE:A");
+      
+
+  else if(percentage>80 && percentage<=90)
+    printf("GRADE:B");
+  
+
+  else if (percentage>60 && percentage<=80)
+    printf("GRADE:C");
+
+  else
+    printf("GRADE:D");
+  
+  return 0;
+}
+
+  
+  
