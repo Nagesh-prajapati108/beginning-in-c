@@ -1,0 +1,39 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    // Write C code here
+    int a,b,c;
+    char op;
+    printf("enter the value of a:");
+    scanf("%d",&a);
+    printf("enter the value of b:");
+    scanf("%d",&b);
+    
+    printf("enter the char(+,-,*,/,%:)");
+    scanf(" %c ",&op);
+    
+    switch(op)
+    {
+        case '+': c=a+b;
+        printf("%d",c);
+        break;
+        case '-': c=a-b;
+        printf("%d",c);
+        break;
+        case '*': c=a*b;
+        break;
+        printf("%d",c);
+        case '/': c=a/b;
+        printf("%d",c);
+        break;
+        printf("%d",c);
+        case '%': c=a%b;
+        printf("%d",c);
+        break;
+        default: printf("invalid input");
+        
+    }
+
+    return 0;
+}
