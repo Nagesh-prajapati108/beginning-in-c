@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("ENTER THE FIRST SIDE:");
+    scanf("%d",&a);
+    printf("ENTER THE SECOND SIDE:");
+    scanf("%d",&b);
+    printf("ENTER THE THIRD NUMBER:");
+    scanf("%d",&c);
+    
+    if(a==b && b==c && a==c)
+    printf("EQUILATORAL TRIANGLE");
+    
+    else if((a==b)|(b==c)|(c==a))
+    printf("ISOSCELES TRIANGLE");
+    
+    else
+    printf("SCALENE TRIANGLE");
+    
+    return 0;
+}
