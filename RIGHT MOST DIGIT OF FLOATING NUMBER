@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    float n;
+    int num, r;
+    printf("ENTER THE NUMBER:");
+    scanf("%f",&n);
+    
+    num=(int)n;
+    r=num%10;
+    printf("right most digit:%d",r);
+    return 0;
+}
+    
