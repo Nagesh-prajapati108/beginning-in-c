@@ -6,9 +6,6 @@ int main()
     printf("ENTER THE NUMBER:");
     scanf("%d",&num);
     
-    rev=num%10;
-    num=num/10;
-    
     while(num>0)
     {
         r=num%10;
