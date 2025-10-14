@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main() {
-    // Write C code here
+
     int a,b,c;
     char op;
     printf("enter the value of a:");
