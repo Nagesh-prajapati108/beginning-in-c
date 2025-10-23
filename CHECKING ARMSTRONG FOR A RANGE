@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int num;
+    printf("ENTER THE RANGE TERM:");
+    scanf("%d",&num);
+    
+    for(int i=1;i<=num;i++)
+    {
+        int c=0,r,a=i,n=i,sum=0;
+        while(a>0)
+        {
+            a=a/10;
+            c++;
+        }
+        
+        while(n>0){
+            r=n%10;
+            n=n/10;
+            sum=sum+pow(r,c);
+        }
+        if(i==sum)
+        printf("%d ia a armstrong\n",i);
+    }
+        
+    return 0;
+}
