@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() 
+{
+    int b;
+    
+    for(int i=65;i<=90;i++)
+    {
+        b=(char)i;
+        printf("%c\t",b);
+    }
+    return 0;
+}
