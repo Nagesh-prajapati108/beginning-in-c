@@ -1,12 +1,27 @@
 #include <stdio.h>
-int main() 
-{
-    int b;
+int main() {
+    int b,ch;
     
-    for(int i=65;i<=90;i++)
-    {
-        b=(char)i;
-        printf("%c\t",b);
+    printf("ENTER U TO PRINT UPPERCASE LETTER\n");
+    printf("ENTER l TO PRINT LOWERCASE LETTER:\n");
+    scanf("%c",&ch);
+    
+    if(ch=='l'){
+        for(int i=97;i<=122;i++)
+        {
+            b=(char)i;
+            printf("%c\t",b);
+        }
     }
+    else if(ch=='U'){
+        for(int i=65;i<=90;i++)
+        {
+            b=(char)i;
+            printf("%c\t",b);
+        }
+    }
+    else
+    printf("INVALID INPUT");
+    
     return 0;
 }
