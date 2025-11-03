@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int i,n;
+    printf("ENTER THE ELEMENT:");
+    scanf("%d",&n);
+    
+    int a[n];
+    
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+
+    printf("the created array is:\t");
+
+    for(i=0;i<n;i++){
+        printf("%d\t",a[i]);
+    }
+    return 0;
+}
