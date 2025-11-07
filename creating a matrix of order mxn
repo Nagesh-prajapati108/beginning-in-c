@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int i,j, m, n;
+    printf("ENTER THE ROWS:");
+    scanf("%d",&m);
+    printf("ENTER THE COLOUMNS:");
+    scanf("%d",&n);
+    
+    int a[m][n];
+    printf("\n ENTER THE ELEMENT:");
+    
+    for(i=0;i<m;i++){
+        for(j=0;j<n;j++)
+        scanf("%d",&a[i][j]);
+    }
+    printf("ELEMENTS ARE:\n");
+    for(i=0;i<m;i++){
+        printf("\n");
+        for(j=0;j<n;j++)
+        printf("\t%d",a[i][j]);
+    }
+
+    return 0;
+}
