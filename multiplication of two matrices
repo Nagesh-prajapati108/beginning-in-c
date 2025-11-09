@@ -1,0 +1,50 @@
+#include<stdio.h>
+int main()
+{
+    int i,m,n,j,c,d;
+    printf("ENTER THE NO. OF ROWS AND COLOUMN OF FIRST MATRIX:");
+    scanf("%d%d",&m,&n);
+    printf("ENTER THE NO. OF ROWS AND COLOMN OF SECOND MATXIX:");
+    scanf("%d%d",&c,&d);
+    
+    if (n==c){
+        int a[m][n], b[m][n], l[m][n];
+        printf("ENTER THE VALUE OF FIRST MATRIX:\n");
+        for(i=0; i<m; i++){
+            for(j=0; j<n; j++){
+                scanf("%d",&a[i][j]);
+            }
+        }
+        
+        printf("ENTER THE VALUE OF SECOND MATRIX:\n");
+        for(i=0; i<c; i++){
+            for(j=0; j<d; j++){
+                scanf("%d",&b[i][j]);
+            }
+        }
+        for(i=0; i<m; i++){
+            for(j=0; j<d; j++){
+                int t,  p=0;
+                for(int k=0; k<n; k++){
+                    t=a[i][k]*b[k][j];
+                    p=p+t;
+                    l[i][j]=p;
+                }
+            }
+        }
+                
+        printf("THE PRODUCT OF BOTH MATRIX:\n");
+        for(i=0; i<m; i++){
+            for(j=0; j<d; j++){
+                printf("%d\t",l[i][j]);
+            }
+            printf("\n");
+        }
+    }
+
+    
+    else
+    printf("MATRICES ARE INCOMPATIBLE FOR MULTIPLICATION");
+
+    return 0;
+}
