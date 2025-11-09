@@ -2,7 +2,7 @@
 int main()
 {
     int n, even_sum=0,odd_sum=0;
-    printf("enter the number for sum:");
+    printf("enter the terms for sum:");
     scanf("%d",&n);
     
     for(int i=1; i<=n; i++)
