@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+    int n, i, j, lsum=0, rsum=0, sum=0;
+    printf("ENTER THE ORDER OF MATRIX:\n");
+    scanf("%d",&n);
+    
+    int a[n][n];
+    printf("ENTER THE ELEMENT OF MATRIX:\n");
+    for(i=0; i<n; i++){
+        for(j=0; j<n; j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("THE MATRIX IS\n");
+    for(i=0; i<n; i++){
+        for(j=0; j<n; j++){
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
+    for(i=0; i<n; i++){
+        for(j=0; j<n; j++){
+            if(i==j)
+            lsum=lsum+a[i][j];
+            
+            if(i+j==n-1)
+            rsum=rsum+a[i][j];
+            
+            if(i==j||i+j==n-1)
+            sum=sum+a[i][j];
+        }
+    }
+    printf("SUM OF LEFT DIAGONL ELEMENTS:%d\n",lsum);
+    printf("SUM OF RIGHT DIAGONAL ELEMENTS:%d\n",rsum);
+    printf("SUM OF ALL DIAGONAL ELEMENT:%d",sum);
+    
+    return 0;
+}
