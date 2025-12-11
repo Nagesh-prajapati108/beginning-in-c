@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main()
+{
+    int n, a[100], mid, beg, i,pos=-1, end, target, found=0;
+    printf("ENTER THE NUMBER OF ELEMENT:\t");
+    scanf("%d",&n);
+
+    printf("ENTER %d ELEMENT OF ARRAY:",n);
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+
+    printf("ENTER THE ELEMENT TO BE SEARCHED:\t");
+    scanf("%d",&target);
+
+    beg=0;
+    end=n-1;
+    while(beg <= end){
+        mid=(beg+end)/2;
+
+        if(a[mid]==target){
+            pos=mid;
+            printf("%d found at %d position",target,mid);
+            found=1;
+            break;
+        }
+
+        else if(a[mid]<target)
+        beg=beg+1;
+
+        else
+        end=end-1; 
+    }
+    if(found==0 && beg>end)
+    printf("element not found");
+
+    return 0;
+}
