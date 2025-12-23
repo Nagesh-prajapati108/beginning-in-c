@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+void add(int firstnum, int secondnum)
+{
+    int sum=firstnum+secondnum;
+    printf("sum:%d\n",sum);
+}
+
+void subtract(int firstnum, int secondnum)
+{
+    int sub=firstnum-secondnum;
+    printf("differance:%d\n",sub);
+}
+void multiply(int firstnum, int secondnum)
+{
+    int product=firstnum*secondnum;
+    printf("product:%d\n",product);
+}
+
+void divide(int firstnum, int secondnum)
+{
+    int divide=firstnum/secondnum;
+    printf("divide:%d\n",divide);
+}
+
+void modulus(int firstnum, int secondnum)
+{
+    int remainder=firstnum%secondnum;
+    printf("remainder:%d\n",remainder);
+}
+
+int main()
+{
+    add(9,6);
+    subtract(9,6);
+    multiply(9,6);
+    divide(9,6);
+    modulus(9,6);
+    
+return 0;
+}
