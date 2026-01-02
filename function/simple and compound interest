@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<math.h>
+int interest(int principal, float rate, int time){
+
+    float SI, CI, amount;
+    SI= (principal*rate*time)/100;
+    amount= principal*pow((1+(rate/100)),time);
+    CI= amount - principal;
+
+    printf("SIMPLE INTEREST= %.2f\n",SI);
+    printf("COMPOND INTEREST= %.2f",CI);
+
+    return 0;
+
+}
+int main()
+{
+    int P;
+    float R;
+    int T;
+    printf("ENTER THE PRINCIPAL AMOUNT: ");
+    scanf("%d", &P);
+
+    printf("ENTER THE RATE OF INTEREST: ");
+    scanf("%f", &R);
+
+    printf("ENTER THE TIME PERIOD: ");
+    scanf("%d", &T);
+
+    interest(P,R,T);
+    return 0;
+    
+}
