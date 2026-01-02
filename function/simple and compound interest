@@ -15,9 +15,9 @@ int interest(int principal, float rate, int time){
 }
 int main()
 {
-    int P;
+    int P,T;
     float R;
-    int T;
+    
     printf("ENTER THE PRINCIPAL AMOUNT: ");
     scanf("%d", &P);
 
