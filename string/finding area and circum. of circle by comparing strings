@@ -1,0 +1,33 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char ch[20];
+    int r;
+
+    printf("whether you what area or circumfrence of circle: ");
+    scanf("%s",ch);
+
+    printf("enter the radius: ");
+    scanf("%d",&r);
+
+    if(strcmp(ch,"area")==0|| strcmp(ch, "AREA")==0)
+    {
+        float area= 3.14*r*r;
+        printf("AREA=%.2f",area);
+    }
+
+    else if(strcmp(ch,"circumference")==0 || strcmp(ch,"CIRCUMFERENCE")==0)
+    {
+        float cir= 2*3.14*r;
+        printf("CIRCUMFRENCE=%.2f",cir);
+    }
+
+    else
+    {
+        printf("INVALID INPUT");
+    }
+
+    return 0;
+
+}
