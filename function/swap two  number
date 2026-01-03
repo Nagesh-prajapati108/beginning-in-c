@@ -1,0 +1,20 @@
+#include<stdio.h>
+int swap(int a, int b){
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("FIRST NUMBER: %d\n",a);
+    printf("SECONND NUMBER: %d",b);
+    return 0;
+}
+int main()
+{
+    int num1, num2;
+    printf("ENTER FIRST NUMBER: ");
+    scanf("%d",&num1);
+    printf("ENTER SECOND NUMBER: ");
+    scanf("%d",&num2);
+    
+    swap(num1,num2);
+    return 0;
+}
