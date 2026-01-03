@@ -1,0 +1,21 @@
+#include<stdio.h>
+int factorial(int n){
+    if(n==0)
+    return 1;
+
+    else
+    return n*factorial(n-1);
+
+}
+int main()
+{
+    int fac=1, n, result;
+    printf("ENTER THE NUMBER: ");
+    scanf("%d",&n);
+
+    result=factorial(n);
+
+    printf("FACTORIAL OF %d= %d",n, result);
+
+    return 0;
+}
