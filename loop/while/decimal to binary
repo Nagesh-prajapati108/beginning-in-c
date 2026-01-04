@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int n, bin[20], j, i=0;
+    printf("enter the decimal number: ");
+    scanf("%d",&n);
+
+    while(n>0){
+        bin[i]=n%2;
+        n=n/2;
+        i++;
+    }
+    
+    printf("binary number form :");
+    for(j=i-1; j>=0; j--){
+        printf("%d",bin[j]);
+    }
+    return 0;
+}
+
+//Decimal to binary conversion is done by repeatedly dividing the decimal number by 2 and writing the remainders in reverse order.
