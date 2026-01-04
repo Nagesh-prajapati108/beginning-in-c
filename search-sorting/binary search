@@ -5,6 +5,8 @@ int main()
     printf("ENTER THE NUMBER OF ELEMENT:\t");
     scanf("%d",&n);
 
+    printf("\nELEMENTS MUST BE SORTED IN ASCENDING ORDER\n");
+
     printf("ENTER %d ELEMENT OF ARRAY:",n);
     for(i=0;i<n;i++){
         scanf("%d",&a[i]);
