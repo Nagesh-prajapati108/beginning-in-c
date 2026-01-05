@@ -1,0 +1,48 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+
+struct student{
+        int rn;
+        char name[30];
+        int marks;
+    } S[20];
+
+int main()
+{
+    int n;
+
+    printf("ENTER THE NUMBER OF STUDENTS: ");
+    scanf("%d",&n);
+
+    printf("ENTER THE STUDENT DETAILS\n");
+    for(int i=0; i<n; i++){
+        printf("enter the roll_no.:  ");
+        scanf("%d", &S[i].rn);
+        getchar();
+
+        printf("enter name:  ");
+        fgets(S[i].name, 30, stdin);
+        S[i].name[strcspn(S[i].name, "\n")] = '\0';
+
+        printf("enter the marks:  ");
+        scanf("%d", &S[i].marks);
+    }
+
+    printf("\n");
+    
+    printf(" STUDENT DETAILS ");
+    for(int i = 0; i < n; i++){
+        printf("\nRoll No : %d", S[i].rn);
+        printf("\nName    : %s", S[i].name);
+        printf("\nMarks  : %d\n", S[i].marks);
+    }
+
+
+    return 0;
+
+
+}
+
+//strcspn() returns the index of the first occurrence in a string of any character from another string.
+//stdin= standard input(keyboard input)
