@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char s[20], s2[20], s3[20];
+    int n;
+
+    printf("enter the string: ");
+    gets(s);
+
+    printf("enter second string : ");
+    gets(s2);
+
+    printf("LENGTH OF STRING IS  %d", strlen(s));
+    printf("\n");
+
+    //copying string
+    strcpy(s3,s2);
+    printf("copied string: ");
+    puts(s);
+    printf("\n");
+
+    //concatination
+    strcat(s,s2);
+    printf("after concatinating: ");
+    puts(s);
+    printf("\n");
+
+
+    //comparing
+    if(strcmp(s,s2)==0)
+    printf("same\n");
+
+    else
+    printf("not same\n");
+
+    n=strcmp(s,s2);
+    printf("%d\n",n);
+
+    
+
+    printf("\n");
+    return 0;
+}
