@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char s[20],rs[20];
+
+    printf("enter the string:  ");
+    gets(s);
+
+    int i=0;
+    int j=strlen(s)-1;
+
+    while(j>=0){
+        rs[i]=s[j];
+        i++;
+        j--;
+    }
+        rs[i]='\0';
+
+    if(strcmp(rs,s)==0)
+    printf("its a palindrom");
+
+    else
+    printf("its not");
+
+
+    return 0;
+}
+
+//strcmp() compares until it finds '\0'. Without '\0': It keeps reading garbage memory.
