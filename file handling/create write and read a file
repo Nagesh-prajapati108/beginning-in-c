@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    FILE *hp;
+    int ch;
+
+    hp=fopen("test.txt","w+");
+
+    
+    if(hp == NULL){
+        printf("file not found");
+    }
+
+    fprintf(hp,"its a test to create and read the file at same time.");
+    
+    rewind(hp);  //rewind() moves the file pointer back to the beginning of the file.
+
+    while((ch=fgetc(hp)) != EOF){
+        printf("%c",ch);
+    }
+
+
+    fclose(hp);
+
+    return 0;
+}
+
