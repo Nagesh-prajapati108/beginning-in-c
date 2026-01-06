@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    FILE *fp;
+
+    fp=fopen("test.txt","w");
+
+    fprintf(fp,"it is begining in file handling. \n it is program to  create a file with name test.");
+
+    fclose(fp);
+    return 0;
+}
