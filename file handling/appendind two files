@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    FILE *fs, *fd;
+    int ch;
+
+    fs=fopen("test1.txt","r");
+    fd=fopen("test2.txt","a+");
+
+    if(fs==NULL){
+        printf("file not found");
+    }
+
+    while((ch=fgetc(fs)) !=EOF){
+        fputc(ch,fd);
+    }
+
+    fprintf(fd,"\nIt is a program for copying content of one file into other\n.It is called appending");
+
+    printf("file appended successfully");
+
+    fclose(fs);
+    fclose(fd);
+
+    return 0;
+}
