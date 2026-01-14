@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    int count=0;
+    char s1[1000], ch;
+
+    printf("enter the sentence: ");
+    fgets(s1, 1000, stdin);
+
+    s1[strcspn(s1, "\n")]= '\0';
+
+    printf("enter the character for frequency check: ");
+    scanf("%c",&ch);
+
+    for(int i=0; s1[i] != '\0'; i++){
+        if(s1[i]==ch)
+        count++;
+    }
+    printf("frequency: %d",count);
+
+    return  0;
+}
